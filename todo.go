@@ -33,7 +33,7 @@ func (t *Todos) Completed(id int) {
 		return
 	}
 	(*t)[id-1].Completed = true
-	(*t)[id-1].CompletedDate = time.Now().Format("23-12-2006 15:04")
+	(*t)[id-1].CompletedDate = time.Now().Format("01-01-2000 15:06:09")
 }
 
 func (t *Todos) indexValidate(id int) error {
